@@ -4,12 +4,23 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
   </head>
   <body>
+    <a-assets>
+      <img id="mad" src="assets/madcity.png">
+      <img id="test" src="assets/test.jpg">
+      <img id="guy1" src="assets/Dude_#15.png">
+      <img id="guy2" src="assets/Dude_#16.png">
+      <img id="guy3" src="assets/IMG_0156.PNG">
+      <img id="guy4" src="assets/IMG_0185.PNG">
+      <img id="guy5" src="assets/IMG_0205.PNG">
+    </a-assets>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
+      <!-- <a-box src="#guy3" position="-1 0.5 -3" rotation="0 45 0" ></a-box> -->
+      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
+      <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+      <a-plane src="#guy4" position="1 0.75 -3" radius="0.5" height="3.5"></a-plane>
+      <a-plane src="#guy5" position="3 0.75 -3" radius="0.5" height="3.5"></a-plane>
+      <a-plane src="#guy3" position="-1 0.75 -3" radius="0.5" height="3.5"></a-plane>
+      <a-sky src="#mad" color="#ECECEC" position="0 490 0" scale="1 1 1" rotation="0 0 0" radius="500"></a-sky>
+    </a-scene>s
   </body>
 </html>
